@@ -20,6 +20,7 @@ import Buses from "@/pages/vehicles/Buses";
 import RVAndCampers from "@/pages/vehicles/RVAndCampers";
 import ConstructionEquipment from "@/pages/vehicles/ConstructionEquipment";
 import NotFound from "@/pages/not-found";
+import Debug from "@/pages/Debug";
 
 function Router() {
   return (
@@ -45,7 +46,10 @@ function Router() {
       <Route path="/vehicles/buses" component={Buses} />
       <Route path="/vehicles/rv-campers" component={RVAndCampers} />
       <Route path="/vehicles/construction-equipment" component={ConstructionEquipment} />
-      
+
+      {/* Debug Page */}
+      <Route path="/debug" component={Debug} />
+
       <Route component={NotFound} />
     </Switch>
   );
