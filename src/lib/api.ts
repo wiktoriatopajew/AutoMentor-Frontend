@@ -11,7 +11,7 @@ export function getApiUrl(path: string): string {
   
   // If we have API_URL, use it
   if (API_URL) {
-    return ${API_URL};
+    return `${API_URL}${path}`;
   }
   
   // Fallback to relative path (for local development)
