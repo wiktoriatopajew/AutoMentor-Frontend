@@ -13,6 +13,12 @@ RUN npm install
 # Copy source code
 COPY . .
 
+# Debug: List what was copied
+RUN ls -la
+
+# Debug: Check if public folder exists
+RUN ls -la public || echo "No public folder"
+
 # Build the application
 RUN npm run build
 
