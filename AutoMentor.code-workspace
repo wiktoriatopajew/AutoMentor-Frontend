@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../pipa"
+		}
+	],
+	"settings": {
+		"chat.agent.maxRequests": 250
+	}
+}

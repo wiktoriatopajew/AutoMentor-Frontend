@@ -1,0 +1,26 @@
+# Railway Configuration - Full-stack app (Backend + Frontend)
+# This file tells Railway how to build and deploy your app
+
+[build]
+  # Build frontend and backend
+  command = "npm install && npm run build"
+  
+  # Force Node.js buildpack
+  builder = "NIXPACKS"
+
+[deploy]
+  # Start command
+  command = "npm start"
+  
+  # Health check path
+  healthcheck = "/api/health"
+  
+  # Restart policy
+  restartPolicy = "always"
+  
+  # Port override
+  port = 5000
+
+[env]
+  # Environment variables that Railway should set
+  NODE_ENV = "production"
