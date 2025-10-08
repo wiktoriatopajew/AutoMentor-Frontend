@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MessageCircle, Wrench, Clock, Shield, Star, X, Check, MapPin, DollarSign, Calendar, Users } from "lucide-react";
-import heroImage from "@assets/stock_images/mechanic_garage_work_4757d5e8.jpg";
+// import heroImage from "@assets/stock_images/mechanic_garage_work_4757d5e8.jpg";
+const heroImage = "/attached_assets/stock_images/mechanic_garage_work_4757d5e8.jpg";
 import { useMechanicsCount } from "@/hooks/useMechanicsCount";
 import { PricingPlans } from "./PricingPlans";
 
